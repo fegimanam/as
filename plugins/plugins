@@ -198,22 +198,22 @@ return {
   description = "Plugin to manage other plugins. Enable, disable or reload.", 
   usage = {
       moderator = {
-          "!plugins disable [plugin] chat : disable plugin only this chat.",
-          "!plugins enable [plugin] chat : enable plugin only this chat.",
+          "/plugs di [plugin] gp : disable plugin only this chat.",
+          "/plugs en [plugin] gp : enable plugin only this chat.",
           },
       sudo = {
-          "!plugins : list all plugins.",
-          "!plugins enable [plugin] : enable plugin.",
-          "!plugins disable [plugin] : disable plugin.",
-          "!plugins reload : reloads all plugins." },
+          "/plugs : list all plugins.",
+          "/plugs en [plugin] : enable plugin.",
+          "/plugs di [plugin] : disable plugin.",
+          "/plugs re : reloads all plugins." },
           },
   patterns = {
-    "^!plugins$",
-    "^!plugins? (enable) ([%w_%.%-]+)$",
-    "^!plugins? (disable) ([%w_%.%-]+)$",
-    "^!plugins? (enable) ([%w_%.%-]+) (chat)",
-    "^!plugins? (disable) ([%w_%.%-]+) (chat)",
-    "^!plugins? (reload)$" },
+    "^/plugs $",
+    "^/plugs? (en) ([%w_%.%-]+)$",
+    "^/plugs? (di) ([%w_%.%-]+)$",
+    "^/plugs? (en) ([%w_%.%-]+) (gp)",
+    "^/plugs? (di) ([%w_%.%-]+) (gp)",
+    "^/plugs? (re)$" },
   run = run,
   moderated = true, -- set to moderator mode
   --privileged = true
