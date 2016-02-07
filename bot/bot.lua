@@ -208,6 +208,7 @@ function create_config( )
   config = {
     enabled_plugins = {
       "x",
+      "sali",
       "plugins",
       "leave"},
     sudo_users = {118333567,81906376,75213323,187873358,160858885,188324390,139990182,156263227},
